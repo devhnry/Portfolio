@@ -1,6 +1,8 @@
 const App = () => {
 	return (
-		<div>App</div>
+		<main className={`bg-[#E4E4DD] h-screen w-full`}>
+			App
+		</main>
 	)
 }
 export default App
