@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'], // Adjust the content path to match your project
   theme: {
     extend: {
+      screens: {
+        "sl" : "600px"
+      },
       colors: {
         background: "#E8E8E3",
 
@@ -20,6 +23,10 @@ module.exports = {
         "button" : "#393632",
         "button-text" : "#E8E8E3",
         "button-hover" : "",
+      },
+      fontSize: {
+        sm: "13px",
+        md: "15px"
       },
       fontFamily: {
         oswald: ['Oswald', 'sans-serif'],

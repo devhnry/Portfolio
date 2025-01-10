@@ -2,7 +2,7 @@ import {Navbar} from "./components/Navbar.tsx";
 
 const App = () => {
 	return (
-		<main className={`bg-[#E4E4DD] h-screen w-full`}>
+		<main className={`bg-background`}>
 			<Navbar />
 		</main>
 	)
