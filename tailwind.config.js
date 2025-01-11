@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js,jsx,ts,tsx}'], // Adjust the content path to match your project
+  content: ['./index.html','./src/**/*.{html,js,jsx,ts,tsx}'], // Adjust the content path to match your project
   theme: {
+    screens: {
+      xs: "375px",
+      xsm: "450px",
+      xsl: "540px",
+      sl: "600px",
+      sm: "640px",
+      md: "720px",
+    },
     extend: {
-      screens: {
-        "sl" : "600px"
-      },
       colors: {
         background: "#E8E8E3",
 
@@ -26,11 +31,12 @@ module.exports = {
       },
       fontSize: {
         sm: "13px",
-        md: "15px"
+        md: "15px",
       },
       fontFamily: {
         oswald: ['Oswald', 'sans-serif'],
         quattrocento: ['Quattrocento', 'serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },
