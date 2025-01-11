@@ -1,7 +1,7 @@
 export const Navbar = () => {
 	const navItems: string[] = ["services","works","about","experience","contact"]
 	return (
-			<header className={`font-inter capitalize font-light text-md text-paragraph-1 px-6`}>
+			<header className={`font-inter capitalize font-light text-md text-paragraph-1`}>
 				<nav className={`flex justify-between items-start md:items-center`}>
 					<div className={`md:flex gap-x-12`}>
 						<p className={`font-bold text-black relative w-fit`}>By Henry
