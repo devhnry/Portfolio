@@ -1,10 +1,7 @@
-import {Container} from "./Container.tsx";
-
 export const Navbar = () => {
 	const navItems: string[] = ["services","works","about","experience","contact"]
 	return (
-		<Container>
-			<header className={`font-roboto capitalize font-light text-md text-paragraph-1 py-7`}>
+			<header className={`font-inter capitalize font-light text-md text-paragraph-1 px-6`}>
 				<nav className={`flex justify-between items-start md:items-center`}>
 					<div className={`md:flex gap-x-12`}>
 						<p className={`font-bold text-black relative w-fit`}>By Henry
@@ -14,9 +11,8 @@ export const Navbar = () => {
 						</p>
 						<p className={`font-light text-paragraph-1 text-sm`}>( Software Engineer )</p>
 					</div>
-					<ul className={`sl:flex items-center gap-x-2 sl:text-sm`}>
+					<ul className={`xsl:flex items-center gap-x-2 xsl:text-sm`}>
 						{navItems.map((item, i) => {
-							console.log(i)
 							return (
 								<li className={``} key={i}>{navItems.length - 1 === i ? item : `${item},`}</li>
 							)
@@ -24,6 +20,5 @@ export const Navbar = () => {
 					</ul>
 				</nav>
 			</header>
-		</Container>
 	)
 }
