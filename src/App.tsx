@@ -16,7 +16,7 @@ const App = () => {
 
 	return (
 		<Container classes={'bg-background'}>
-			<section className={`h-screen flex flex-col justify-between py-7`}>
+			<section className={`h-dvh flex flex-col justify-between py-7`}>
 				<Navbar />
 				{isDesktop ? <HeroSectionDesktop /> :	<HeroSectionMobile />}
 			</section>
