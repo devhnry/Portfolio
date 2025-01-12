@@ -29,7 +29,7 @@ export const HeroSectionMobile = () => {
 export const HeroSectionDesktop = () => {
   return (
     <>
-
+      
     </>
   )
 }
