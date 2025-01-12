@@ -1,5 +1,3 @@
-// "use client"
-
 import React, { useEffect, useRef } from "react";
 import styles from "./CustomCursor.module.css";
 
@@ -33,7 +31,7 @@ const CustomCursor: React.FC = () => {
     let animationFrameId: number;
 
     const animateCircles = () => {
-      let { x, y } = coords.current;
+      const { x, y } = coords.current;
 
       circles.forEach((circle, index) => {
         const dx = circle.x - x;

@@ -5,7 +5,9 @@
 
 :root {
     --font-size-heading-one: clamp(3.813rem,calc(2rem + 7vw),8.125rem);
-    --line-height-heading-one: clamp(3.195rem,calc(1.5rem + 6vw),7.938rem)
+    --font-size-heading-one-desktop: clamp(3.813rem,calc(2rem + 8.2vw),9.825rem);
+    --line-height-heading-one: clamp(3.195rem,calc(1.5rem + 6vw),7.938rem);
+    --line-height-heading-one-desktop: clamp(3.595rem,calc(1.5rem + 6vw),8.938rem)
 }
 
 @layer components{
@@ -13,5 +15,10 @@
         @apply font-inter font-bold -tracking-[1.5px] uppercase transition-all;
         font-size: var(--font-size-heading-one) !important;
         line-height: var(--line-height-heading-one);
+    }
+
+    .heading-one-desktop{
+        @apply font-inter font-bold -tracking-[1.5px] uppercase transition-all whitespace-nowrap -ml-[8px] text-[clamp(3.813rem,calc(2rem+8vw),9.825rem)] lg:text-[130px] xl:text-[160px] lg:leading-[120px];
+        /*line-height: var(--line-height-heading-one-desktop);*/
     }
 }

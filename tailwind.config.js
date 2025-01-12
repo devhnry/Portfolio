@@ -9,10 +9,13 @@ module.exports = {
       sl: "600px",
       sm: "640px",
       md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      '2xl': '1320px',
     },
     extend: {
       colors: {
-        background: "#e8e8e3",
+        background: "#E0E0DB",
 
         "heading-1" : "#080807",
         "heading-2" : "#D1D1C7",
