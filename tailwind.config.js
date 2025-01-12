@@ -8,11 +8,11 @@ module.exports = {
       xsl: "540px",
       sl: "600px",
       sm: "640px",
-      md: "720px",
+      md: "768px",
     },
     extend: {
       colors: {
-        background: "#E8E8E3",
+        background: "#e8e8e3",
 
         "heading-1" : "#080807",
         "heading-2" : "#D1D1C7",

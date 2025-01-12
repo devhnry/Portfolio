@@ -4,13 +4,13 @@
 @tailwind utilities;
 
 :root {
-    --font-size-heading-one: clamp(3.813rem,calc(1.5rem + 7vw),8.125rem);
-    --line-height-heading-one: clamp(3.195rem,calc(1.8rem + 7vw),8.938rem)
+    --font-size-heading-one: clamp(3.813rem,calc(2rem + 7vw),8.125rem);
+    --line-height-heading-one: clamp(3.195rem,calc(1.5rem + 6vw),7.938rem)
 }
 
 @layer components{
     .heading-one{
-        @apply font-inter font-bold -tracking-[1.5px] uppercase;
+        @apply font-inter font-bold -tracking-[1.5px] uppercase transition-all;
         font-size: var(--font-size-heading-one) !important;
         line-height: var(--line-height-heading-one);
     }
