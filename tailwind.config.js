@@ -30,7 +30,7 @@ module.exports = {
 
         "button" : "#393632",
         "button-text" : "#E8E8E3",
-        "button-hover" : "",
+        "button-hover" : "#79795F",
       },
       fontSize: {
         sm: "13px",
