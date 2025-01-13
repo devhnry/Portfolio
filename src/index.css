@@ -7,7 +7,10 @@
     --font-size-heading-one: clamp(3.813rem,calc(2rem + 7vw),8.125rem);
     --font-size-heading-one-desktop: clamp(3.813rem,calc(2rem + 8.2vw),9.825rem);
     --line-height-heading-one: clamp(3.195rem,calc(1.5rem + 6vw),7.938rem);
-    --line-height-heading-one-desktop: clamp(3.595rem,calc(1.5rem + 6vw),8.938rem)
+    --line-height-heading-one-desktop: clamp(3.595rem,calc(1.5rem + 6vw),8.938rem);
+
+    --font-size-heading-two: clamp(3.75rem,calc(2rem + 7vw),8.125rem);
+    --line-height-heading-two: clamp(3.195rem,calc(2rem + 8.2vw),9.825rem);
 }
 
 @layer components{
@@ -20,5 +23,10 @@
     .heading-one-desktop{
         @apply font-inter font-bold -tracking-[1.5px] uppercase transition-all whitespace-nowrap -ml-[8px] text-[clamp(3.813rem,calc(2rem+8vw),9.825rem)] lg:text-[130px] xl:text-[160px] lg:leading-[120px];
         /*line-height: var(--line-height-heading-one-desktop);*/
+    }
+
+    .heading-two{
+        font-size: var(--font-size-heading-two);
+        line-height: var(--line-height-heading-one);
     }
 }

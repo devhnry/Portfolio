@@ -2,10 +2,11 @@ import {Navbar} from "./components/Navbar.tsx";
 import {Container} from "./components/Container.tsx";
 import { HeroSectionDesktop, HeroSectionMobile } from "./components/heroSection/HeroSection.tsx";
 import { useEffect, useState } from "react";
+import { Services } from "./components/Services.tsx";
 
 const App = () => {
-
 	const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+
 	useEffect(() => {
 		const handleResize = () => {
 			setIsDesktop(window.innerWidth >= 768);
@@ -15,12 +16,15 @@ const App = () => {
 	}, []);
 
 	return (
-		<Container classes={'bg-background'}>
-			<section className={`h-dvh flex flex-col justify-between py-7`}>
-				<Navbar />
-				{isDesktop ? <HeroSectionDesktop /> :	<HeroSectionMobile />}
-			</section>
-		</Container>
+		<main className={`bg-background`}>
+			<Container>
+				<section className={`h-dvh flex flex-col justify-between py-7`}>
+					<Navbar />
+					{isDesktop ? <HeroSectionDesktop /> :	<HeroSectionMobile />}
+				</section>
+			</Container>
+			<Services />
+		</main>
 	)
 }
 export default App

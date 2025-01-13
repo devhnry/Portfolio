@@ -1,10 +1,34 @@
 import { Button } from "../Button.tsx";
 import imageUrl from "../../assets/henry.jpeg";
 import imageUrl2 from "../../assets/henry2.png";
+import {motion as m } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export const HeroSectionMobile = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+      console.log(scrollY)
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollY]);
+
   return (
-    <div className={`grid gap-10`}>
+    <m.div initial={{ opacity: 1, y : 0 }}
+           animate={{
+             opacity: Math.max(1 - scrollY / 300, 0),
+             scale: Math.max(1 - scrollY / 500, 0.92),
+           }}
+           transition={{
+             opacity: { duration: 0.5, ease: "easeOut" },
+             scale: { duration: 0.5, ease: "easeOut" },
+           }}
+           className={`grid gap-10 fixed left-0 right-0 px-6 sm:px-8 lg:px-10 z-10 bottom-7`}>
       <div className={`grid items-start gap-4`}>
         <h1 className={`heading-one *:block`}>
           <span>Henry</span>
@@ -23,13 +47,34 @@ export const HeroSectionMobile = () => {
           <p className={`text-5xl xsm:text-6xl transition-all font-bold text-paragraph-5`}>JAN' 25</p>
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 
 export const HeroSectionDesktop = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+      console.log(scrollY)
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollY]);
+
   return (
-    <div className={`grid gap-7 xl:gap-10`}>
+    <m.div initial={{ opacity: 1, y : 0 }}
+           animate={{
+             opacity: Math.max(1 - scrollY / 300, 0),
+             scale: Math.max(1 - scrollY / 500, 0.92),
+           }}
+           transition={{
+             opacity: { duration: 0.5, ease: "easeOut" },
+             scale: { duration: 0.5, ease: "easeOut" },
+           }} className={`grid gap-7 xl:gap-10 fixed left-0 right-0 px-6 sm:px-8 lg:px-10 z-10 bottom-7`}>
       <h1 className={`heading-one-desktop relative w-fit`}>henry taiwo<span className={`lg:hidden`}>&#169;</span>
         <img className={`absolute hidden lg:block -top-[30px] -right-[75px] size-[5rem] xl:size-[6rem] xl:-right-[90px]`} src={`./src/assets/copyright.svg`} alt={``} />
       </h1>
@@ -47,6 +92,6 @@ export const HeroSectionDesktop = () => {
           <p className={`text-5xl lg:text-8xl xsm:text-6xl transition-all font-bold text-paragraph-5`}>JAN' 25</p>
         </div>
       </div>
-    </div>
+    </m.div>
   )
 }

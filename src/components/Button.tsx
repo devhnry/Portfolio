@@ -23,7 +23,7 @@ export const Button: React.FC<ButtonProps> = ({text}) => {
 			</div>
 			<m.img animate={{scale: hoveredOn ? [1.1, 1.3, 1] : 1}} className={`size-4 relative z-20`} src={`src/assets/arrow-up.svg`} alt={``} />
 			<span className="absolute inset-0 z-10 block overflow-hidden">
-				<span className={`block h-full w-full translate-y-full rounded-full bg-button-hover transition-all duration-500 ease-expo ${hoveredOn && 'translate-y-0 rounded-none'}`}></span>
+				<span className={`block h-full w-full rounded-full bg-button-hover transition-all duration-500 ease-expo ${hoveredOn ? 'translate-y-0 rounded-none' : 'translate-y-full'}`}></span>
 			</span>
 		</button>
 	)

@@ -7,8 +7,8 @@ interface ContainerProps {
 
 export const Container: React.FC<ContainerProps> = ({children, classes}) => {
 	return (
-		<main className={`max-w-[1690px] px-6 sm:px-8 lg:px-10 w-full mx-auto overscroll-none overflow-x-hidden ${classes ? `!${classes}` : ''}`}>
+		<section className={`max-w-[1690px] px-6 sm:px-8 lg:px-10 w-full mx-auto overflow-x-hidden overscroll-none overflow-y-clip ${classes ? `${classes}` : ''}`}>
 			{children}
-		</main>
+		</section>
 	)
 }

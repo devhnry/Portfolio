@@ -20,7 +20,7 @@ export const Navbar = () => {
 						{navItems.map((item, i) => {
 							return (
 								<li key={item} className="relative overflow-hidden flex cursor-none">
-									<p className="block h-[28px] overflow-hidden"
+									<div className="block h-[28px] overflow-hidden"
 										onMouseEnter={() => setHoveredIndex(i)}
 										onMouseLeave={() => setHoveredIndex(null)} >
 										<m.div
@@ -34,7 +34,7 @@ export const Navbar = () => {
 											<span>{item}</span>
 											<m.span initial={{ y: '0%' }} animate={{ opacity: hoveredIndex === i ? 1 : 0.5 }}>{item}</m.span>
 										</m.div>
-									</p>
+									</div>
 									<span>,</span>
 								</li>
 							)
