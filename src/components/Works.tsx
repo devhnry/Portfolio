@@ -2,7 +2,17 @@ import {AnimateLetters, AnimateWord} from "./AnimateText.tsx";
 import {motion as m} from "framer-motion";
 import SelectedWorks from "./SelectedWorks.tsx";
 
+type works = {
+		field: string;
+		name: string;
+		keywords: string[];
+}
+
 export const Works = () => {
+		const selectedWorks: works[] = [
+				{ field:'architecture and engineering' , name: 'arch studio' , keywords: ['design', 'development', '2024'],}
+		]
+
 		return (
 				<section className={`bg-black py-4 max-w-[1690px] px-4 xs:px-6 sm:px-8 lg:px-10 w-full mx-auto`}>
 						<div className={`grid gap-10 relative`}>
@@ -27,7 +37,9 @@ export const Works = () => {
 						</div>
 
 						<div>
-								<SelectedWorks field={'architecture and engineering'} name={'arch studio'} keywords={['design', 'development', '2024']} />
+								{selectedWorks.map((works, i) => (
+										<SelectedWorks key={i} field={works.field} name={works.name} keywords={works.keywords} />
+								))}
 						</div>
 				</section>
 		)
