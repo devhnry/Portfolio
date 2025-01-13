@@ -1,6 +1,6 @@
 import {Navbar} from "./components/Navbar.tsx";
 import {Container} from "./components/Container.tsx";
-import {HeroSectionDesktop, HeroSectionMobile} from "./components/heroSection/HeroSection.tsx";
+import {HeroSectionDesktop, HeroSectionMobile} from "./components/HeroSection.tsx";
 import {useEffect, useState} from "react";
 import {Services} from "./components/Services.tsx";
 

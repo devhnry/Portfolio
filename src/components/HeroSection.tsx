@@ -1,6 +1,6 @@
-import {Button} from "../Button.tsx";
-import imageUrl from "../../assets/henry.jpeg";
-import imageUrl2 from "../../assets/henry2.png";
+import {Button} from "./Button.tsx";
+import imageUrl from "../assets/henry.jpeg";
+import imageUrl2 from "../assets/henry2.png";
 import {motion as m} from "framer-motion";
 import {useEffect, useState} from "react";
 
