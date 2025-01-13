@@ -1,8 +1,8 @@
-import { Button } from "../Button.tsx";
+import {Button} from "../Button.tsx";
 import imageUrl from "../../assets/henry.jpeg";
 import imageUrl2 from "../../assets/henry2.png";
-import {motion as m } from "framer-motion";
-import { useEffect, useState } from "react";
+import {motion as m} from "framer-motion";
+import {useEffect, useState} from "react";
 
 export const HeroSectionMobile = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -10,7 +10,6 @@ export const HeroSectionMobile = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
-      console.log(scrollY)
     };
     window.addEventListener("scroll", handleScroll);
     return () => {

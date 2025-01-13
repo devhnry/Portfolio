@@ -1,4 +1,4 @@
-import { motion as m } from "framer-motion";
+import {motion as m} from "framer-motion";
 import React from "react";
 
 interface AnimateTextProps {
@@ -44,7 +44,6 @@ export const AnimateWord: React.FC<AnimateTextProps> = ({ text, duration = 0.2, 
           }}
           key={`word-${index}`} style={{ display: "inline-block" }}>
           {word}
-          {/* Add a non-breaking space after each word except the last */}
           {index < text.split(" ").length - 1 && <span>&nbsp;</span>}
         </m.span>
       ))}
