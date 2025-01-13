@@ -26,7 +26,7 @@
     }
 
     .heading-two{
-        font-size: var(--font-size-heading-two);
-        line-height: var(--line-height-heading-one);
+        font-size: clamp(2.8rem, calc(2.9rem + 4.5vw), 10rem);
+        line-height: clamp(2.75rem, calc(2.75rem + 4.5vw), 9.8rem);
     }
 }
