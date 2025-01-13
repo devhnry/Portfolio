@@ -83,7 +83,7 @@ export const HeroSectionDesktop = () => {
           <p className={`text-paragraph-1 w-[clamp(300px,2.5vw,340px)] text-[clamp(1rem,2.5vw,1.065rem)] lg:text-[clamp(1rem,2.5vw,1.3rem)] lg:max-w-[350px] lg:w-full`}>I help growing brands and startups gain an unfair advantage through premium, result driven websites.</p>
           <Button text={`send a message`} />
         </div>
-        <div style={{backgroundImage: `url(${imageUrl2})`}} className={`h-[450px] max-w-[350px] bg-no-repeat bg-center bg-cover rounded-[18px] relative overflow-hidden ml-8 lg:ml-0 transition-all filter hover:grayscale-0 duration-200`}>
+        <div style={{backgroundImage: `url(${imageUrl2})`}} className={`h-[450px] max-w-[350px] bg-no-repeat bg-center bg-cover rounded-[18px] relative overflow-hidden ml-8 lg:ml-0 transition-all hover:grayscale-0 duration-200 filter grayscale-[50%]`}>
           <div className={`overlay bg-gradient-to-b from-transparent to-black/30 absolute inset-0`}></div>
         </div>
         <div className={`text-[1rem] h-fit mt-auto leading-[1.2] font-oswald uppercase text-right text-paragraph-1 grid gap-y-1`}>

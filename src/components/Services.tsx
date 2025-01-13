@@ -58,14 +58,13 @@ export const Services = () => {
                 opacity: 1,
                 transition: {duration: 0.2, ease: "easeInOut", delay: 0.4}
               }}
-                   className={`uppercase font-mono text-md tracking-wider font-medium overflow-hidden`}>(services)
+                   className={`uppercase font-mono font-quattrocento text-md tracking-wider font-medium overflow-hidden`}>(services)
               </m.p>
               <m.p className={`flex flex-wrap pb-8`}>
                 <AnimateWord
                     text={'Frustrated with websites/applications that don\'t reflect your brand or drive growth? I craft premium web experiences that captivate and help you focus on growing your business.'}
                     duration={0.3} delay={0.03} yLevel={15} viewport={true}/>
               </m.p>
-              {/*<div className={`bg-paragraph-2/50 h-[0.5px] w-full`}></div>*/}
             </div>
           </div>
           {/* SERVICES I OFFER */}
