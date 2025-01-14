@@ -27,7 +27,7 @@ export const HeroSectionMobile = () => {
              opacity: { duration: 0.5, ease: "easeOut" },
              scale: { duration: 0.5, ease: "easeOut" },
            }}
-           className={`grid gap-10 fixed left-0 right-0 px-6 sm:px-8 lg:px-10 z-10 bottom-7`}>
+           className={`grid gap-10 fixed left-0 right-0 px-6 sm:px-8 lg:px-10 z-0 bottom-7`}>
       <div className={`grid items-start gap-4`}>
         <h1 className={`heading-one *:block`}>
           <span>Henry</span>
