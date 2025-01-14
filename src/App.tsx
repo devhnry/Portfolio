@@ -4,6 +4,8 @@ import {HeroSectionDesktop, HeroSectionMobile} from "./components/HeroSection.ts
 import {useEffect, useState} from "react";
 import {Services} from "./components/Services.tsx";
 import {Works} from "./components/Works.tsx";
+import {Experience} from "./components/Experience.tsx";
+
 
 const App = () => {
 		const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
@@ -27,7 +29,8 @@ const App = () => {
 						<div className={`relative top-0 z-20 min-h-screen w-full overflow-x-clip`}>
 								<Services/>
 						</div>
-						<Works />
+						<Works/>
+						<Experience/>
 				</main>
 		)
 }
