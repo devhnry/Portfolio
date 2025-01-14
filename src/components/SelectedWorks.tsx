@@ -13,7 +13,7 @@ const SelectedWorks: React.FC<Props> = ({field, name, keywords}) => {
 						<div className={`box details grid py-4`}>
 								<p className={`project-background text-[1.2rem] font-quattrocento`}>{field}</p>
 								<h4 className={`project font-bold uppercase title text-paragraph-3 text-[1.8rem] pb-1`}>{name}</h4>
-								<div className={`buttons uppercase text-[10px] *:border-paragraph-3/70 font-inter *:border-[0.5px] *:w-fit *:rounded-full *:px-2 *:py-0.5 flex gap-x-1`}>
+								<div className={`buttons uppercase text-[10px] *:border-paragraph-3/70 font-inter *:border-[0.5px] *:w-fit *:rounded-full *:px-2 *:py-0.5 flex gap-x-1 gap-y-2 flex-wrap`}>
 										{keywords.map((word: string, index: number) => (
 												<p className={(index + 1 == keywords.length) ? 'bg-paragraph-2 text-black' : ''} key={word}>{word}</p>
 										))}

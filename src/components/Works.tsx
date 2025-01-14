@@ -10,10 +10,10 @@ type works = {
 
 export const Works = () => {
 		const selectedWorks: works[] = [
-				{ field:'architecture & engineering' , name: 'arch studio' , keywords: ['design', 'development', '2024']},
-				{ field:'dating & relationship' , name: 'whossy web app' , keywords: ['design', 'development', '2024']},
-				{ field:'banking & finance' , name: 'finatic' , keywords: ['design', 'development', '2024']},
-				{ field:'banking & finance' , name: 'online banking API' , keywords: ['integration', 'development', '2024']}
+				{ field:'architecture & engineering' , name: 'arch studio' , keywords: ['react', 'typescript', 'framer-motion', '2024']},
+				{ field:'dating & relationship' , name: 'whossy web app' , keywords: ['react', 'typescript', 'firebase', '2024']},
+				{ field:'banking & finance' , name: 'finatic' , keywords: ['nextJS', 'typescript' , 'java', 'spring-boot','framer-motion', '2025']},
+				{ field:'banking & finance' , name: 'online banking API' , keywords: ['java', 'spring-boot', '2024']}
 		]
 
 		return (
