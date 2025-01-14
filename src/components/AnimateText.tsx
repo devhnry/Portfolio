@@ -33,7 +33,7 @@ export const AnimateLetters: React.FC<AnimateTextProps> = ({text, duration = 0.2
 export const AnimateWord: React.FC<AnimateTextProps> = ({ text, duration = 0.2, delay = 0.04, yLevel = 30, viewport = true }) => {
   return (
     <>
-      {text.split(" ").map((word, index) => (
+      {text?.split(" ").map((word, index) => (
         <m.span
           initial={{ y: yLevel, opacity: 0, scale: 0.9 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}

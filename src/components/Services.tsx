@@ -42,7 +42,7 @@ export const Services = () => {
           {/* SERVICES I OFFER */}
           <div className={`flex flex-col gap-y-16 justify-between`}>
             {services.map((service, i) => (
-                <ServiceTabs index={i + 1} title={service.title} services={service.services} text={service.text}/>
+                <ServiceTabs key={i} index={i + 1} title={service.title} services={service.services} text={service.text}/>
             ))}
           </div>
         </section>

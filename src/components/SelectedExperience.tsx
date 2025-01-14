@@ -21,10 +21,9 @@ const SelectedExperience: React.FC<Props> = ({date, jobTitle, company, details, 
 												<li key={i} >{detail}</li>
 										))}
 								</ul>
-								<div
-										className={`buttons uppercase text-[12px] *:border-paragraph-3/70 font-inter *:border-[0.5px] *:w-fit *:rounded-full *:px-2 *:py-0.5 flex gap-x-1 ml-auto w-fit`}>
-										{techStacks.map(stack => (
-												<p>{stack}</p>
+								<div className={`buttons uppercase text-[12px] *:border-paragraph-3/70 font-inter *:border-[0.5px] *:w-fit *:rounded-full *:px-2 *:py-0.5 flex gap-x-1 ml-auto w-fit`}>
+										{techStacks.map((stack, i) => (
+												<p key={i}>{stack}</p>
 										))}
 								</div>
 						</div>

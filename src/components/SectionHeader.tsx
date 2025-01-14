@@ -4,8 +4,8 @@ import {motion as m} from "framer-motion";
 
 interface SectionHeaderProps {
 		title: string,
-		subtitle: string,
-		description: string,
+		subtitle?: string,
+		description?: string,
 		length?: number,
 }
 
@@ -21,11 +21,11 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({title, subtitle, descripti
 										opacity: 1,
 										transition: {duration: 0.2, ease: "easeInOut", delay: 0.4}
 								}}
-										 className={`uppercase font-mono text-md tracking-wider font-medium overflow-hidden`}>({subtitle})
+										 className={`uppercase font-mono text-md tracking-wider font-medium overflow-hidden ${subtitle ? '' : 'hidden'} `}>({subtitle})
 								</m.p>
 								<m.p className={`flex flex-wrap pb-8`}>
 										<AnimateWord
-												text={description}
+												text={description as string}
 												duration={0.3} delay={0.03} yLevel={15} viewport={true}/>
 								</m.p>
 						</div>

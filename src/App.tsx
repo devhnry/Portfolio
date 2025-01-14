@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import {Services} from "./components/Services.tsx";
 import {Works} from "./components/Works.tsx";
 import {Experience} from "./components/Experience.tsx";
+import {AboutMe} from "./components/AboutMe.tsx";
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
 						</div>
 						<Works/>
 						<Experience/>
+						<AboutMe />
 				</main>
 		)
 }
