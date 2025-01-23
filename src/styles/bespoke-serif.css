@@ -1,352 +1,147 @@
-@font-face {
-    font-family: 'Oswald';
-    src: url("public/fonts/Oswald-Bold.ttf") format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
+/**
+* @license
+*
+* Font Family: Bespoke Serif
+* Designed by: Jeremie Hornus, Theo Guillard, Morgane Pambrun, Alisa Nowak, Joachim Vu
+* URL: https://www.fontshare.com/fonts/bespoke-serif
+* © 2025 Indian Type Foundry
+*
+* Bespoke Serif Light
+* Bespoke Serif LightItalic
+* Bespoke Serif Regular
+* Bespoke Serif Italic
+* Bespoke Serif Medium
+* Bespoke Serif MediumItalic
+* Bespoke Serif Bold
+* Bespoke Serif BoldItalic
+* Bespoke Serif Extrabold
+* Bespoke Serif ExtraboldItalic
+* Bespoke Serif Variable (Variable font)
+* Bespoke Serif VariableItalic (Variable font)
 
+*
+*/
 @font-face {
-    font-family: 'Oswald';
-    src: url("public/fonts/Oswald-ExtraLight.ttf") format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Oswald';
-    src: url("public/fonts/Oswald-Light.ttf") format('truetype');
+    font-family: 'BespokeSerif-Light';
+    src: url('../fonts/bespoke-serif/BespokeSerif-Light.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-Light.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-Light.ttf') format('truetype');
     font-weight: 300;
-    font-style: normal;
     font-display: swap;
+    font-style: normal;
 }
-
 @font-face {
-    font-family: 'Oswald';
-    src: url("public/fonts/Oswald-Medium.ttf") format('truetype');
+    font-family: 'BespokeSerif-LightItalic';
+    src: url('../fonts/bespoke-serif/BespokeSerif-LightItalic.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-LightItalic.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'BespokeSerif-Regular';
+    src: url('../fonts/bespoke-serif/BespokeSerif-Regular.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-Regular.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BespokeSerif-Italic';
+    src: url('../fonts/bespoke-serif/BespokeSerif-Italic.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-Italic.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'BespokeSerif-Medium';
+    src: url('../fonts/bespoke-serif/BespokeSerif-Medium.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-Medium.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-Medium.ttf') format('truetype');
     font-weight: 500;
-    font-style: normal;
     font-display: swap;
-}
-
-@font-face {
-    font-family: 'Oswald';
-    src: url("public/fonts/Oswald-Regular.ttf") format('truetype');
-    font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
-
 @font-face {
-    font-family: 'Oswald';
-    src: url("public/fonts/Oswald-SemiBold.ttf") format('truetype');
-    font-weight: 600;
-    font-style: normal;
+    font-family: 'BespokeSerif-MediumItalic';
+    src: url('../fonts/bespoke-serif/BespokeSerif-MediumItalic.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-MediumItalic.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
     font-display: swap;
-}
-
-@font-face {
-    font-family: 'Quattrocento';
-    src: url("public/fonts/Quattrocento-Bold.ttf") format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Quattrocento';
-    src: url("public/fonts/Quattrocento-Regular.ttf") format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
     font-style: italic;
-    font-display: swap;
 }
-
 @font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-Bold.ttf') format('truetype');
+    font-family: 'BespokeSerif-Bold';
+    src: url('../fonts/bespoke-serif/BespokeSerif-Bold.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-Bold.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-display: swap;
     font-style: normal;
-    font-display: swap;
 }
-
 @font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-BoldItalic.ttf') format('truetype');
+    font-family: 'BespokeSerif-BoldItalic';
+    src: url('../fonts/bespoke-serif/BespokeSerif-BoldItalic.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-BoldItalic.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-BoldItalic.ttf') format('truetype');
     font-weight: 700;
-    font-style: italic;
     font-display: swap;
+    font-style: italic;
 }
-
 @font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-ExtraBold.ttf') format('truetype');
+    font-family: 'BespokeSerif-Extrabold';
+    src: url('../fonts/bespoke-serif/BespokeSerif-Extrabold.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-Extrabold.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-Extrabold.ttf') format('truetype');
     font-weight: 800;
-    font-style: normal;
     font-display: swap;
+    font-style: normal;
 }
-
 @font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-ExtraBoldItalic.ttf') format('truetype');
+    font-family: 'BespokeSerif-ExtraboldItalic';
+    src: url('../fonts/bespoke-serif/BespokeSerif-ExtraboldItalic.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-ExtraboldItalic.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-ExtraboldItalic.ttf') format('truetype');
     font-weight: 800;
-    font-style: italic;
     font-display: swap;
+    font-style: italic;
 }
-
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0wght 800.0;
+*
+* available axes:
+'wght' (range from 300.0 to 800.0'wght' (range from 300.0 to 800.0
+*/
 @font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
+    font-family: 'BespokeSerif-Variable';
+    src: url('../fonts/bespoke-serif/BespokeSerif-Variable.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-Variable.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-Variable.ttf') format('truetype');
+    font-weight: 300 800;
+    font-display: swap;
     font-style: normal;
-    font-display: swap;
 }
-
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 300.0wght 800.0;
+*
+* available axes:
+'wght' (range from 300.0 to 800.0'wght' (range from 300.0 to 800.0
+*/
 @font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-ExtraLightItalic.ttf') format('truetype');
-    font-weight: 200;
+    font-family: 'BespokeSerif-VariableItalic';
+    src: url('../fonts/bespoke-serif/BespokeSerif-VariableItalic.woff2') format('woff2'),
+    url('../fonts/bespoke-serif/BespokeSerif-VariableItalic.woff') format('woff'),
+    url('../fonts/bespoke-serif/BespokeSerif-VariableItalic.ttf') format('truetype');
+    font-weight: 300 800;
+    font-display: swap;
     font-style: italic;
-    font-display: swap;
 }
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('public/fonts/Roboto-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-ExtraLightItalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/public/fonts/Inter-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
