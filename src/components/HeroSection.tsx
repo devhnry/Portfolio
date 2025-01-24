@@ -94,3 +94,20 @@ export const HeroSectionDesktop = () => {
     </m.div>
   )
 }
+
+export const SectionMobile = () => {
+    return (
+        <section>
+            <div className={`text-[#DDDDD5]`}>
+                <div>
+                    <h1 className={`leading-[16px]`}>Henry <br /> Taiwo </h1>
+                    <p>I help growing brands and startup gain an unfair advantage through premium driven website and web applications.</p>
+                    <button>Book a call</button>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+    )
+}

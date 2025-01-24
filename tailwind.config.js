@@ -14,33 +14,52 @@ module.exports = {
       '2xl': '1320px',
     },
     extend: {
-      colors: {
-        background: "#E0E0DB",
-
-        "heading-1" : "#080807",
-        "heading-2" : "#D1D1C7",
-        "heading-3" : "#7E766C",
-
-        "paragraph-1" : "#6B645C",
-        "paragraph-2" : "#A29E9A",
-        "paragraph-3" : "#BFBFB1",
-        "paragraph-4" : "#524D47",
-        "paragraph-5" : "#393632",
-        "paragraph-sub" : "#8C8C73",
-
-        "button" : "#393632",
-        "button-text" : "#E8E8E3",
-        "button-hover" : "#79795F",
-      },
-      fontSize: {
-        sm: "13px",
-        md: "15px",
-      },
       fontFamily: {
-        oswald: ['Oswald', 'sans-serif'],
-        quattrocento: ['Quattrocento', 'serif'],
-        inter: ['Inter', 'sans-serif'],
+        bespoke: ['BespokeSerif-Variable', 'serif'],
+        cabinet: ['CabinetGrotesk-Variable', 'sans-serif'],
+        chillax: ['Chillax-Variable', 'sans-serif'],
+        generalSans: ['GeneralSans-Variable', 'sans-serif'],
       },
+      fontWeight: {
+        thin: 100,
+        extraLight: 200,
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extraBold: 800,
+        black: 900,
+      },
+      colors: {
+        // Neutral Colors
+        neutral: {
+          100: '#FFFFFF', // white
+          200: '#F2F2F2', // white-smoke
+          300: '#E6E6E6', // light-gray
+          400: '#D9D9D9', // silver-gray
+        },
+        // Gray Shades
+        gray: {
+          100: '#666666', // dim-gray
+          200: '#4D4D4D', // charcoal
+          300: '#262626', // gunmetal
+          400: '#0E0E0C', // dark-charcoal
+        },
+        // Beige Tones
+        beige: {
+          light: {
+            100: '#FAFAF9', // ivory
+            200: '#E8E8E3', // alabaster
+            300: '#DDDDD5', // light-taupe
+            400: '#D1D1C7', // ash-beige
+          },
+          dark: {
+            300: '#AEAE9D', // stone-beige
+            400: '#8C8C73', // earth-taupe
+          },
+        },
+      }
     },
   },
   plugins: [],
