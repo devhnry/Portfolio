@@ -1,7 +1,9 @@
+import {motion as m} from "framer-motion";
+
 export const Navbar = () => {
 
 		return (
-				<header className={`sticky top-0 capitalize text-beige-light-200 mx-6 pt-4`}>
+				<m.header initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeIn", delay: 5 } }} className={`sticky top-0 capitalize text-beige-light-200 mx-6 pt-4`}>
 						<nav className={`flex justify-between items-center md:items-center`}>
 								<div className={`md:flex gap-x-12`}>
 										<p className={`font-semibold  relative w-fit capitalize`}>byhenry
@@ -19,6 +21,6 @@ export const Navbar = () => {
 										<div className={`bg-beige-light-400 w-[30px] h-[3px]`}></div>
 								</div>
 						</nav>
-				</header>
+				</m.header>
 		)
 }
