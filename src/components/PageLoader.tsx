@@ -46,19 +46,22 @@ export const IntroAnimation = ({ onComplete }: { onComplete: () => void }) => {
 
 		return (
 				<m.div
-						className="fixed inset-0 bg-black flex items-center justify-center z-50 rounded-b-[40vw]"
-						initial={{ height: "100%" }}
-						animate={{ height: showIntro ? "100%" : "0%" }}
+						className="fixed text-beige-dark-400 inset-0 bg-gray-400 flex items-center justify-center z-50"
+						initial={{ height: "100%", borderRadius: "0 0 0 0" }}
+						animate={{
+								height: showIntro ? "100%" : "0%",
+								borderRadius: showIntro ? "0 0 0 0" : "0 0 40% 40%",
+						}}
 						transition={{ delay: 1.5, duration: 1, ease: "easeInOut" }}
 				>
 						<m.div className="overflow-hidden">
 								<AnimatePresence>
 										{showIntro && (
-												<m.div className="flex fixed bottom-0 left-0 right-0 mx-auto w-fit">
+												<m.div className="flex fixed text-beige-dark-400 bottom-0 left-0 right-0 mx-auto w-fit">
 														{text.split("").map((letter, index) => (
 																<m.span
 																		key={index}
-																		className="text-white text-center leading-[70%] tracking-tight font-chillax text-[75px] font-bold"
+																		className="text-center leading-[70%] tracking-tight font-chillax text-[75px] font-bold"
 																		variants={letterVariants}
 																		custom={index}
 																		initial="hidden"
