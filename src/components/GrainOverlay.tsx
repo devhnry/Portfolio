@@ -14,7 +14,7 @@ export function GrainOverlay() {
         after:content-[''] after:absolute after:inset-0 after:bg-repeat after:opacity-[0.01] after:mix-blend-screen
         before:content-[''] before:absolute before:inset-0 before:bg-[#000000] before:opacity-[0.01] before:mix-blend-screen
         ${isLoaded ? "opacity-100" : "opacity-0"}
-        transition-opacity duration-1000 z-[99999]`}
+        transition-opacity duration-1000 z-99999`}
 					aria-hidden="true"
 			/>
 	)

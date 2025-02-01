@@ -11,7 +11,7 @@ export const Navbar: FC<Props> = ({ navIsOpen, setNavIsOpen }) => {
 				<m.header
 						initial={{ opacity: 0, y: -50 }}
 						animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeIn", delay: 5 } }}
-						className={`sticky top-0 capitalize text-beige-light-200 mx-6 pt-4 z-[100]`}
+						className={`sticky top-0 capitalize text-beige-light-200 mx-6 pt-4 z-100`}
 				>
 						<nav className={`flex justify-between items-center md:items-center`}>
 								<div className={`md:flex gap-x-12`}>

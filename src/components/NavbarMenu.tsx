@@ -48,7 +48,7 @@ export const NavbarMenu: FC<Props> = ({ navIsOpen, setNavIsOpen }) => {
 														transition: { staggerChildren: 0.1, staggerDirection: -1 },
 												},
 										}}
-										className="fixed inset-0 z-[102] overflow-hidden flex flex-col pointer-events-auto"
+										className="fixed inset-0 z-102 overflow-hidden flex flex-col pointer-events-auto"
 								>
 										{[...Array(10)].map((_, i) => (
 												<m.div

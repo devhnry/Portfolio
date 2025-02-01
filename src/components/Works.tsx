@@ -17,7 +17,7 @@ export const Works = () => {
 		]
 
 		return (
-				<section className={`bg-black py-4 max-w-[1690px] px-4 xs:px-6 sm:px-8 lg:px-10 w-full mx-auto z-[50] relative pb-[120px]`}>
+				<section className={`bg-black py-4 max-w-[1690px] px-4 xs:px-6 sm:px-8 lg:px-10 w-full mx-auto z-50 relative pb-[120px]`}>
 						<SectionHeader title={`selected  works/`} subtitle={`projects`} description={'Featured projects that' +
 								' have been meticulously crafted with passion to drive result and impact.'} length={selectedWorks.length} />
 						<div className={`grid gap-10`}>

@@ -1,10 +1,72 @@
-@import "./styles/bespoke-serif.css";
-@import "./styles/chillax.css";
-@import "./styles/general-sans.css";
-@import "./styles/cabinet-grotesk.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import './styles/bespoke-serif.css' layer(base);
+@import './styles/chillax.css' layer(base);
+@import './styles/general-sans.css' layer(base);
+@import './styles/cabinet-grotesk.css' layer(base);
+@import 'tailwindcss';
+
+@theme {
+  '--breakpoint-*' : initial;
+  --breakpoint-xs: 375px;
+  --breakpoint-xsm: 450px;
+  --breakpoint-xsl: 540px;
+  --breakpoint-sl: 600px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1320px;
+
+  --font-bespoke: BespokeSerif-Variable, serif;
+  --font-cabinet: CabinetGrotesk-Variable, sans-serif;
+  --font-chillax: Chillax-Variable, sans-serif;
+  --font-general-sans: GeneralSans-Variable, sans-serif;
+
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #f2f2f2;
+  --color-neutral-300: #e6e6e6;
+  --color-neutral-400: #d9d9d9;
+
+  --color-gray-100: #666666;
+  --color-gray-200: #4d4d4d;
+  --color-gray-300: #262626;
+  --color-gray-400: #0e0e0c;
+
+  --color-beige-light-100: #fafaf9;
+  --color-beige-light-200: #e8e8e3;
+  --color-beige-light-300: #ddddd5;
+  --color-beige-light-400: #d1d1c7;
+
+  --color-beige-dark-300: #aeae9d;
+  --color-beige-dark-400: #8c8c73;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 body{
     background-color: rgb(0, 0, 0);

@@ -8,7 +8,7 @@ interface Props {
 
 const SelectedWorks: React.FC<Props> = ({field, name, keywords}) => {
 		return (
-				<div className={`box text-paragraph-1 capitalize z-[50] relative`}>
+				<div className={`box text-paragraph-1 capitalize z-50 relative`}>
 						<div className={`placeholder-image size-[320px] bg-gray-500`}></div>
 						<div className={`box details grid py-4`}>
 								<p className={`project-background text-[1.2rem] font-quattrocento`}>{field}</p>
